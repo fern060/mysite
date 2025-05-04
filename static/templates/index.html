@@ -34,12 +34,7 @@
 </body>
 
 <script>
-    try {
-        var loadNotes = localStorage.getItem("notes");
-    }
-    catch(err) {
-        var loadNotes = "Enter your notes here and click 'Save'";
-    }
+    var loadNotes = localStorage.getItem("notes");
     $("#notes-area").val(loadNotes);
 
     $("#saveNotesBtn").click(function(){
